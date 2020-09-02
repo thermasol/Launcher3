@@ -317,7 +317,7 @@ public class TouchInteractionService extends Service implements
         mAM = ActivityManagerWrapper.getInstance();
 
         if (UserManagerCompat.getInstance(this).isUserUnlocked(Process.myUserHandle())) {
-            initWhenUserUnlocked();
+//            initWhenUserUnlocked();
         } else {
             mIsUserUnlocked = false;
             registerReceiver(mUserUnlockedReceiver, new IntentFilter(Intent.ACTION_USER_UNLOCKED));
